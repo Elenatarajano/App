@@ -10,6 +10,7 @@ var usersRouter = require('./routes/users');
 //**
 
 var miRutaRouter = require('./routes/servicios');
+var bdRouter = require('./routes/bd');
 
 //**
 
@@ -31,6 +32,7 @@ app.use('/users', usersRouter);
 //**
 
 app.use('/servicios', miRutaRouter);
+app.use('/bd', bdRouter);
 
 //**
 
